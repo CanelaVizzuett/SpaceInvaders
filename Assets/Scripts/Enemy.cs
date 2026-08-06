@@ -16,6 +16,8 @@ public class Enemy : MonoBehaviour
     protected string destroyAnimationName = "Destroy";
     [SerializeField]
     private string destroySoundName = "asteroid_explode";
+    [SerializeField]
+    protected string appearSoundName;
     public Transform Target { set { target = value; } }
     protected enum State { Active, Dead}
     protected State currentState;
